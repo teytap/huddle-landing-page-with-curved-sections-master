@@ -38,8 +38,7 @@ p {
 .curve {
   width: 100%;
 }
-.container {
-}
+
 .grow-together,
 .your-users {
   background: var(--very-pale-blue);
@@ -58,7 +57,7 @@ p {
 }
 .header-row {
   display: grid;
-  grid-template-columns: 200px 250px;
+  grid-template-columns: 200px 200px;
   justify-content: space-between;
   padding: 40px;
 }
@@ -117,4 +116,51 @@ i {
   text-align: center;
 }
 @media (max-width: 375px) {
+  body {
+    margin: 10px;
+  }
+  p {
+    padding: 5px;
+    margin: 10px;
+  }
+  .header-row {
+    grid-template-columns: 50px 150px;
+    justify-content: space-between;
+    padding: 0px;
+    margin-bottom: 100px;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+    grid-auto-rows: 280px;
+  }
+  .mockups {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+  .col {
+    text-align: center;
+    padding: 0px 30px;
+  }
+  footer .row {
+    grid-auto-rows: 350px;
+  }
+
+  .grow-together,
+  .your-users {
+    margin-top: -5px;
+  }
+  footer {
+    margin-top: -7px;
+  }
+  .header-logo {
+    width: 100px;
+  }
+  .try-btn {
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin: 0px;
+    font-size: 12px;
+  }
 }
