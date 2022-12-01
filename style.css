@@ -108,3 +108,8 @@ input {
   padding: 0px;
   margin: 26px 0px 24px 0px;
 }
+.numbers {
+  text-align: center;
+}
+@media (max-width: 375px) {
+}
